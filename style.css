@@ -1,10 +1,11 @@
 body {
-    background-color: #66ccff;
-    color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #cccccc);
+    background-repeat: no-repeat;
+    color: #000000;
 }
 
 #style {
-    background-color: #006699;
+    background-color: #336633;
     margin-bottom: 0;
 }
 
@@ -13,9 +14,10 @@ h1 {
 }
 
 h2 {
-    color: #ffffff;
+    color: #3399ff;
 }
 
 .style {
     background-color: #000000;
+    color: #cccccc;
 }
