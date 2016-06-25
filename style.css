@@ -1,23 +1,71 @@
+header {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     background-image: linear-gradient(to bottom, #ffffff, #cccccc);
     background-repeat: no-repeat;
     color: #000000;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 #style {
+    margin-left: 0;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
     background-color: #336633;
     margin-bottom: 0;
 }
 
 h1 {
-  color: #ffffcc;  
+    text-align: center;
+    color: #ffffcc;  
+    background-image: url(images/overwatch_logo.png-c200);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 5%;
 }
-
+    
 h2 {
     color: #3399ff;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .style {
     background-color: #000000;
     color: #cccccc;
+}
+
+footer {
+    font-style: italic;
+    font-size: 75%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+nav a {
+    color: #cc3333;
+}
+
+main p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-indent: 20px;
 }
