@@ -7,9 +7,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    background-image: linear-gradient(to bottom, #ffffff, #cccccc);
+    background-image: url(images/Overwatch_competitive_play_update%5B1%5D.png);
     background-repeat: no-repeat;
+    background-size: cover;
     color: #000000;
+    font-family: Arial, "Times New Roman", serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #ffffff;
     font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -23,8 +34,19 @@ body {
     margin-bottom: 0;
 }
 
+figure {
+    float: right;
+    padding: 10px;
+    border-style: solid;
+}
+
+figcaption {
+    font-family: fantasy, "Times New Roman", serif;
+    text-align: center;
+}
+
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Palatino, "Times New Roman", serif;
     text-align: center;
     color: #ffffcc;  
     background-image: url(images/overwatch_logo.png-c200);
@@ -34,6 +56,7 @@ h1 {
 }
     
 h2 {
+    font-family: fantasy, "Times New Roman", serif;
     color: #3399ff;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -45,7 +68,7 @@ h2 {
 
 footer {
     font-style: italic;
-    font-size: 75%;
+    font-size: 65%;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -58,6 +81,7 @@ main ul {
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1.4em;
     margin: 10px;
 }
 

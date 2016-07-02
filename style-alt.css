@@ -7,9 +7,21 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    background-image: linear-gradient(to bottom, #ffffff, #66ccff);
+    background-image:url(images/overwatch-heroes-background-blizzard-1080x623.png);
     background-repeat: no-repeat;
+    background-size: cover;
     color: #000000;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #ffffff;
     font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -23,6 +35,18 @@ body {
     margin-bottom: 0;
 }
 
+figure {
+    float: right;
+    padding: 10px;
+    border-style: solid;
+}
+
+figcaption {
+    font-family: fantasy, "Times New Roman", serif;
+    text-align: center;
+}
+
+
 h1 {
     font-family: Georgia, "Times New Roman", serif;
     text-align: center;
@@ -34,6 +58,7 @@ h1 {
 }
 
 h2 {
+     font-family: Georgia,"Times New Roman", serif;
     color: #666666;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -45,19 +70,20 @@ h2 {
 
 footer {
     font-style: italic;
-    font-size: 75%;
+    font-size: 65%;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
 }
 
 main ul {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1.4em;
     margin: 10px;
 }
 
