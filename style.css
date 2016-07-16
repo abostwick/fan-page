@@ -1,12 +1,21 @@
 header {
+    margin-left: 0;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto; 
+    background-image: linear-gradient(to bottom,#ffffff, #ffff33);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 80%;
     background-image: url(images/Overwatch_competitive_play_update%5B1%5D.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,14 +23,43 @@ body {
     font-family: Arial, "Times New Roman", serif;
 }
 
+
+#wrap {
+    width: 80%;
+    margin:0 auto;
+}
+
+#left_col {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+#right_col {
+    width: 48%;
+    float: right;
+    background-color: #ffffff;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-main {
+main{
     background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-family: Georgia, "Times New Roman", serif;
+}
+
+main div {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-size: cover;
+    background-color: #ffffff;
 }
 
 #style {
@@ -30,8 +68,8 @@ main {
     border-bottom-right-radius: 90px;
     border-bottom-left-radius: 90px;
     border-top-left-radius: 90px;
-    background-color: #336633;
     margin-bottom: 0;
+    background-size: contain;
 }
 
 figure {
@@ -48,7 +86,8 @@ figcaption {
 h1 {
     font-family: Palatino, "Times New Roman", serif;
     text-align: center;
-    color: #ffffcc;  
+    text-shadow: 1px 1px 1px #000000;
+    color: #3399ff;  
     background-image: url(images/overwatch_logo.png-c200);
     background-position: 5px;
     background-repeat: no-repeat;
@@ -56,6 +95,13 @@ h1 {
 }
     
 h2 {
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
     font-family: fantasy, "Times New Roman", serif;
     color: #3399ff;
     text-shadow: 1px 1px 1px #000000;
@@ -79,10 +125,24 @@ main ul {
 }
 
 nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    margin-left: 300px;
+    margin-right: 300px;
     text-align: center;
     font-weight: bold;
     font-size: 1.4em;
-    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: none;
 }
 
 nav a {
@@ -93,4 +153,64 @@ main p {
     padding-left: 40px;
     padding-right: 40px;
     text-indent: 20px;
+}
+
+@media only screen and (max-width: 64em){
+    body {
+        margin: 0;
+        background-color: #ffffff;
+    }
+    #wrap {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+    figure {
+        margin-left: 0;
+        height: 200px;
+    }
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    #header {
+        padding-top: 1em;
+    }
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav a {
+        display: block;
+    }
+    figure {
+        background-image: none;
+        height: 0;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
 }
